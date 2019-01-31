@@ -122,3 +122,5 @@ fi
 LS_COLORS=$LS_COLORS:'di=1;035:ex=1;036' ; export LS_COLORS
 
 export EDITOR=vim
+
+
