@@ -17,7 +17,6 @@ set wildmenu
 
 color minimalist
 
-set background=dark
 
 set t_Co=256
 
