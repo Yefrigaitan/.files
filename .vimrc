@@ -77,4 +77,5 @@ set dir^=~/.backup//
 "   your search always case-insensitive or case-sensitive, respectively.
 set ignorecase
 
-
+set smartindent
+set autoindent
