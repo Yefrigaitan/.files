@@ -124,3 +124,4 @@ LS_COLORS=$LS_COLORS:'di=1;035:ex=1;036' ; export LS_COLORS
 export EDITOR=vim
 
 
+alias sshc='ssh -X yg2548@clac.cs.columbia.edu'
