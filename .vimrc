@@ -1,11 +1,9 @@
 
-
-
 set nocompatible
 
 " line numbers, syntax, and plugins
 set number
-syntax enable
+syntax on
 filetype plugin on
 
 " FINDING FILES 
@@ -15,10 +13,25 @@ set path+=**
 " Display all matching files 
 set wildmenu
 
-color minimalist
-
+set background=dark
+colorscheme palenight
 
 set t_Co=256
+
+
+if (empty($TMUX))
+  if (has("nvim"))
+
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+" Italics for my favorite color scheme
+let g:palenight_terminal_italics=1
 
 " FILE BROWSING:
 
