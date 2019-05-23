@@ -142,3 +142,13 @@ fi
 unset __conda_setup
 # <<< conda init <<<
 alias tmux="env TERM=xterm-256color tmux"
+
+# added by travis gem
+# [ -f /home/yefri/.travis/travis.sh ] && source /home/yefri/.travis/travis.sh
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin

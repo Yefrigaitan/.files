@@ -14,7 +14,7 @@ set path+=**
 set wildmenu
 
 set background=dark
-colorscheme minimalist
+colorscheme dracula
 
 set t_Co=256
 
