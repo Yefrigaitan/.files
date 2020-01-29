@@ -99,6 +99,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias vim="nvim"
 alias tmux="env TERM=xterm-256color tmux"
 
+export TODOTXT_DEFAULT_ACTION=ls
+alias t='todo.sh -d ~/.todo/config'
+
 alias config="vim ~/.config/nvim/init.vim"
 
 # enable programmable completion features (you don't need to enable
@@ -113,6 +116,8 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+
+complete -F todo t
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
