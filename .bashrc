@@ -77,7 +77,7 @@ LS_COLORS=$LS_COLORS:'di=1;035:ex=1;036' ; export LS_COLORS
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls -a  --color=auto'
+    alias ls='ls --color=auto'
     alias dir='dir --color=auto'
     alias vdir='vdir --color=auto'
 
@@ -127,3 +127,5 @@ export PATH=$PATH:$HOME/.local/bin
 
 # for rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+alias perf="httperf --hog --server 192.168.56.101 --uri /pic.jpg --port 10000 --num-conns 400 --ra 25"
