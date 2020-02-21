@@ -51,6 +51,20 @@
                 "objc",
                 "objcpp"
             ]
+        },
+        "ocaml": {
+            "command": "opam",
+            "args": [
+                "config",
+                "exec",
+                "--",
+                "ocaml-language-server",
+                "--stdio"
+            ],
+            "filetypes": [
+                "ocaml",
+                "reason"
+            ]
         }
     },
     "coc.preferences.extensionUpdateCheck": "daily",
