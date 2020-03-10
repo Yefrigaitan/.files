@@ -68,5 +68,6 @@
         }
     },
     "coc.preferences.extensionUpdateCheck": "daily",
-    "explorer.icon.enableNerdfont": true
+    "explorer.icon.enableNerdfont": true,
+    "suggest.autoTrigger": "trigger"
 }
